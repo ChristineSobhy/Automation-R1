@@ -1,0 +1,50 @@
+package Assignment1;
+
+import java.util.Scanner;
+
+public class A1 
+{
+	public static void main (String args[])
+	{
+	Scanner Calculator1 = new Scanner (System.in);
+	double x,y,Total1;
+	System.out.println("First Number:");
+	x= Calculator1.nextDouble();
+	System.out.println("Second Number:");
+	y= Calculator1.nextDouble();
+	Total1= x+y;
+	System.out.print("Total Number is:");
+	System.out.println(Total1);
+	
+	Scanner Calculator2 = new Scanner (System.in);
+	double A,B,Total2;
+	System.out.println("First Number:");
+	A= Calculator2.nextDouble();
+	System.out.println("Second Number:");
+	B= Calculator2.nextDouble();
+	Total2= A*B;
+	System.out.print("Total Number is:");
+	System.out.println(Total2);
+	
+	Scanner Calculator3 = new Scanner (System.in);
+	double C,D,Total3;
+	System.out.println("First Number:");
+	C= Calculator3.nextDouble();
+	System.out.println("Second Number:");
+	D= Calculator3.nextDouble();
+	Total3= C/D;
+	System.out.print("Total Number is:");
+	System.out.println(Total3);
+	
+	Scanner Calculator4 = new Scanner (System.in);
+	double E,F,Total4;
+	System.out.println("First Number:");
+	E= Calculator4.nextDouble();
+	System.out.println("Second Number:");
+	F= Calculator4.nextDouble();
+	Total4= E-F;
+	System.out.print("Total Number is:");
+	System.out.println(Total4);
+	
+	}
+}
