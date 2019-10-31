@@ -1,0 +1,42 @@
+package Assignment2;
+
+import java.util.Scanner;
+
+public class A2 {
+
+	public void Comparaison ()
+	{
+		Scanner Box = new Scanner (System.in);
+		int x,y;
+		System.out.println("First Number:");
+		x= Box.nextInt();
+		System.out.println("Second Number:");
+		y= Box.nextInt();
+		
+		if (x>y)
+		{
+			System.out.println ("Integer1 > Integer2");	
+		}
+		else if (x<y)
+		{
+			System.out.println ("Integer1 < Integer2");
+		}
+		else if (x==y)
+		{
+			System.out.println ("Integer1 = Integer2");
+		}
+		
+	}
+}
+
+
+
+
+public class A21 {
+
+	public static void main (String args[]) {
+		A2 Comparaison1 = new A2 ();
+		Comparaison1.Comparaison ();
+	}
+	}
+
