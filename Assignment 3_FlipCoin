@@ -1,0 +1,38 @@
+package Assignment3;
+
+import java.util.Scanner;
+import java.util.Random;
+
+public class FlipCoin {
+	
+	    public static void main(String[] args)
+	    {
+	        int Heads = 0;
+	        int Tails = 0;
+	        int X = 1;
+	        double RandomNo = 0.0;
+
+	        while(X <= 26)
+	        {
+	            RandomNo = Math.random();
+	            System.out.print(X + "\t" + RandomNo);
+
+	            if(RandomNo < .5)
+	            {
+	                Heads++;
+	                System.out.println("\t Heads");
+	            }
+	            else
+	            {
+	                Tails++;
+	                System.out.println("\t Tails");
+	               }
+	            X++;
+	        }
+	        System.out.println();
+	        System.out.println("Heads Number = " + Heads);
+	        System.out.println("Tails Number = " + Tails);
+
+
+
+}}
