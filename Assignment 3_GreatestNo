@@ -1,0 +1,31 @@
+package Assignment3;
+import java.util.Scanner;
+
+public class GreatestNo {
+
+		  public static void main(String[] args) {
+		  Scanner scan = new Scanner(System.in);
+
+		  System.out.print("Enter the First number then Press Enter: ");
+		  int x = scan.nextInt();
+
+		  System.out.print("Enter the Second number then Press Enter: ");
+		  int y = scan.nextInt();
+
+		  System.out.print("Enter the Third number then Press Enter: ");
+		  int z = scan.nextInt();
+
+
+		  if (x > y)
+		   if (x > z)
+		    System.out.println("The greatest number is The First: " + x);
+
+		  if (y > x)
+		   if (y > z)
+		    System.out.println("The greatest number is The Second: " + y);
+
+		  if (z > x)
+		   if (z > y)
+		    System.out.println("The greatest number is The Third: " + z);
+		 }
+	}
