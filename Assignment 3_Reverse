@@ -1,0 +1,25 @@
+package Assignment3;
+import java.util.Scanner;
+
+public class Reverse {
+
+	public static void main(String args[])
+	   {
+	      int R, reverse = 0;
+
+	      Scanner scan = new Scanner(System.in);
+	      System.out.println("Enter Your Number Then Press Enter");
+
+
+	      R = scan.nextInt();
+
+	      while(R != 0)
+	      {
+	          reverse = reverse * 10;
+	          reverse = reverse + R%10;
+	          R = R/10;
+	      }
+
+	      System.out.println("The Reversed order of the Entered Number is  " + reverse);
+}
+}
