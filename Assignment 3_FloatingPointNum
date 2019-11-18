@@ -1,0 +1,45 @@
+package Assignment3;
+import java.util.Scanner;
+public class FloatingPoint {
+  public static void main(String[] args)
+    {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Please Enter the Desired Value then Press Enter ");
+        double x = scan.nextDouble();
+
+        if (x > 0)
+        {
+            if (x < 1)
+            {
+                System.out.println("small positive number");
+            }
+            else if (x > 1000000)
+            {
+                System.out.println("large positive number");
+            }
+            else
+            {
+                System.out.println("Positive number");
+            }
+        }
+        else if (x < 0)
+        {
+            if (Math.abs(x) < 1)
+            {
+                System.out.println("small negtive number");
+            }
+            else if (Math.abs(x) > 1000000)
+            {
+                System.out.println("large negative number");
+            }
+            else
+            {
+                System.out.println("Negative number");
+            }
+        }
+        else
+        {
+            System.out.println("Zero");
+        }
+    }
+}
